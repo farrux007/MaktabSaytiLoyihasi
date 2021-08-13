@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow';
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2.5px;
+}
+
+
+.dark-mode {
+    background-color: #191e2e;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    border-bottom: 0.5px dotted rgb(140, 0, 255);
+
+    .themetoggle {
+
+        border-radius: 25px;
+        margin-top: 15px;
+        padding: 5px 10px 5px 10px;
+        position: relative;
+
+        i {
+            position: relative;
+
+        }
+
+        .toggle-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            border: #bbb solid 1px;
+            height: 20px;
+            transition: 0.3s;
+            transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+            margin: 0;
+            vertical-align: top;
+            background: #ffffff;
+
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .toggle-button::after {
+            content: "";
+            transition: 0.3s;
+            display: inline-block;
+            position: absolute;
+            left: 3px;
+            top: 1.5px;
+            transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+            width: 15px;
+            height: 15px;
+            background-color: rgb(140, 0, 255);
+            border-radius: 50%;
+
+            transform: translateX(0);
+        }
+
+        .toggle-button:checked::after {
+            transform: translateX(calc(100% + 3px));
+            background-color: #fff;
+        }
+
+        .toggle-button:checked {
+            background-color: rgb(140, 0, 255);
+        }
+    }
+
+    h1 {
+        margin: 20px;
+        
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 5px 15px 5px 15px;
+            color: rgb(140, 0, 255);
+        }
+
+        a:hover {
+            border: 5px rgb(140, 0, 255) solid;
+            border-radius: 25px;
+            color: white;
+            background: rgb(140, 0, 255);
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+
+            li {
+                padding: 5px 15px 5px 15px;
+                color: rgb(140, 0, 255);
+                margin: 15px 15px 15px 15px;
+            }
+
+            li:hover {
+                border-radius: 25px;
+                color: white;
+                background: rgb(140, 0, 255);
+                border: 1px rgb(140, 0, 255) solid;
+            }
+
+        }
+
+        a.active li {
+            border-radius: 25px;
+            color: white;
+            background: rgb(140, 0, 255);
+            border: 1px rgb(140, 0, 255) solid;
+        }
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .skills {
+        h1.skillstheme {
+            margin: 25px;
+        }
+        p {
+            font-size: 10px;
+            margin: 15px 0 15px 15px;
+        }
+        .containerr {
+            width: 350px;
+            background-color: #fff;
+            border-radius: 25px;
+            border:rgb(140, 0, 255) solid 1px;
+            text-align: center;
+            /*padding: 5px;
+            margin: 15px 0px 15px 15px;*/
+            margin: 15px 0px 15px 15px;
+            .html5 {
+                width: 90%;
+                background-color: rgb(140, 0, 255);
+            }
+            .css {
+                width: 70%;
+                background-color: rgb(140, 0, 255);
+            }
+            .js {
+                width: 30%;
+                background-color: rgb(140, 0, 255);
+            }
+            .js, .html5, .css {
+                padding: 10px;
+                border-radius: 25px;
+                
+            }
+        }
+        
+    }
+
+    .mypic {
+        margin-top: 5%;
+        pointer-events: none;
+    }
+
+    .home {
+        /*border: 1px black solid;*/
+        padding: 15px;
+        margin: 25px;
+        font-size: 35px;
+        text-align: center;
+        justify-content: center;
+
+        p {
+            margin-top: 15%;
+            font-size: 15px;
+        }
+
+        span {
+            color: rgb(140, 0, 255);
+            font-size: 40px;
+        }
+        h1.text {
+            margin-right: auto;
+            text-align: center;
+        }
+        input {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            border: 1px #bbb solid;
+            padding: 10px;
+            
+        }
+        textarea {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            border: 1px #bbb solid;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        input.submit {
+            background: rgb(140, 0, 255);
+            color: white;
+            cursor: pointer;
+        }
+
+
+    }
+
+}

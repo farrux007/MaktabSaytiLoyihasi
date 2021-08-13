@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3d9e55ceec.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../icons/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="../style/style.css">
+    <!--<link href="//db.onlinewebfonts.com/c/1ce44cc25409dd2c93dd1163395cfc8f?family=Samsung+Sharp+Sans" rel="stylesheet" type="text/css"/>-->
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>
+            <a href="../index.html"><i class="fas fa-portrait"></i>Portfolio</a>
+        </h1>
+        <ul>
+            <a href="../index.html">
+                <li><i class="fas fa-home"></i> HOME</li>
+            </a>
+            <a href="./skills.html" class="active">
+                <li><i class="fas fa-laptop-code"></i> SKILLS</li>
+            </a>
+            <a href="./work.html">
+                <li><i class="fas fa-briefcase"></i> WORKS</li>
+            </a>
+            <a href="./contact.html">
+                <li><i class="fas fa-comment-dots"></i> CONTACT</li>
+            </a>
+        </ul>
+        <div class="themetoggle">
+            <i class="fas fa-sun"></i>
+            <input type="checkbox" id="toggle-button" class="toggle-button" onclick="myFunction()">
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+    <div name="#home" class="container">
+        <div class="skills">
+            <h1 class="skillstheme">
+                MY SKILLS
+            </h1>
+            <p>&diams; <i class="fab fa-html5"></i> HTML5 (90%)</p>
+            <div class="containerr">
+                <div class="html5"></div>
+            </div>
+            <p>&diams; <i class="fab fa-css3"></i> CSS (70%)</p>
+            <div class="containerr">
+                <div class="css"></div>
+            </div>
+            <p>&diams; <i class="fab fa-js-square"></i> JavaScript (30%)</p>
+            <div class="containerr">
+                
+                <div class="js"></div>
+            </div>
+        </div>
+        <div class="mypic">
+            <img src="../images/skills.svg" alt="mypic" width="450px">
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
